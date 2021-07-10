@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var num=[];
+      var count=1;
+      var i;
+      for(i=0;i<10;i++)
+      {
+        if(i%5===0)
+        {
+          num.push("Buzz")
+        }
+        else if(i%3===0)
+        {
+          num.push("Fizz ")
+        }
+        else if(i%3===0&&i%5===0)
+        {
+          num.push("Fizzbuzz ")
+        }
+        else {
+          num.push(count+" ")
+        }
+        count++;
+      }
+      document.write(num);
+    </script>
+  </body>
+</html>
